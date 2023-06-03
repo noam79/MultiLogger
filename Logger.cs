@@ -6,13 +6,13 @@ public static class Logger
 
     public static void WriteLine(string log)
     {
-        Console.WriteLine(DateTime.Now + log);
-        File.AppendAllText(LogPath, DateTime.Now +log + '\n');
+        Console.WriteLine(DateTime.Now + " " + log);
+        File.AppendAllText(LogPath, DateTime.Now + " " + log + '\n');
     }
 
     public static void Write(string log)
     {
-        Console.Write(DateTime.Now + log);
-        File.AppendAllText(LogPath, DateTime.Now + log);
+        Console.Write(DateTime.Now + " " + log);
+        File.AppendAllText(LogPath, DateTime.Now + " " + log);
     }
 }
